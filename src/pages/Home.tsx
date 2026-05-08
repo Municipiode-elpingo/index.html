@@ -67,7 +67,7 @@ export default function Home({ onNavigate }: HomeProps) {
                 <span className="text-white drop-shadow-sm">de El Pingo</span>
               </h1>
               <p className="text-black/75 text-lg md:text-xl leading-relaxed mb-10 max-w-lg">
-                Trabajamos cada día para mejorar la calidad de vida de los vecinos del Pueblo San Julián y construir juntos el futuro de nuestra comunidad.
+                MAS FUTURO.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button
