@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube } from 'lucide-react';
 import { PageId } from '../types';
 
 interface FooterProps {
@@ -33,16 +33,28 @@ export default function Footer({ onNavigate }: FooterProps) {
             </p>
             <div className="flex gap-3 mt-5">
               <a
-                href="#"
+                href="https://www.facebook.com/municipioelpingo/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#E2B95B] transition-colors duration-200"
               >
                 <Facebook size={16} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/municipioelpingo/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#E2B95B] transition-colors duration-200"
               >
                 <Instagram size={16} />
+              </a>
+              <a
+                href="https://www.youtube.com/@fiestadelguiso9346"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-red-500 transition-colors duration-200"
+              >
+                <Youtube size={16} />
               </a>
             </div>
           </div>
@@ -76,15 +88,15 @@ export default function Footer({ onNavigate }: FooterProps) {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-[#E2B95B] mt-0.5 shrink-0" />
-                <span className="text-gray-400 text-sm">Calle Principal s/n, El Pingo, Entre Ríos, Argentina</span>
+                <span className="text-gray-400 text-sm">Presidente Perón 232, El Pingo, Entre Ríos, Argentina (CP 3132)</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-[#E2B95B] shrink-0" />
-                <span className="text-gray-400 text-sm">+54 (343) 000-0000</span>
+                <span className="text-gray-400 text-sm">+54 343 6239365</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-[#E2B95B] shrink-0" />
-                <span className="text-gray-400 text-sm">contacto@municipioelpingo.gob.ar</span>
+                <span className="text-gray-400 text-sm">secdegob.municipioelpingo@gmail.com</span>
               </li>
             </ul>
           </div>

@@ -7,32 +7,21 @@ interface OrdenanzasProps {
 }
 
 const ordenanzas = [
-  { numero: '001/2026', titulo: 'Presupuesto General de Gastos y Recursos del Municipio para el ejercicio 2026', fecha: '15/01/2026', categoria: 'Presupuesto', descripcion: 'Aprobación del presupuesto municipal para el período 2026.' },
-  { numero: '048/2025', titulo: 'Regulación del uso del espacio público para ferias y eventos comunitarios', fecha: '10/12/2025', categoria: 'Espacio Público', descripcion: 'Normas para el uso y gestión del espacio público municipal.' },
-  { numero: '047/2025', titulo: 'Creación del Registro Municipal de Emprendedores Locales', fecha: '05/11/2025', categoria: 'Comercio', descripcion: 'Institución del registro oficial de emprendedores del municipio.' },
-  { numero: '046/2025', titulo: 'Adhesión al programa provincial de reciclado y gestión de residuos sólidos urbanos', fecha: '20/10/2025', categoria: 'Ambiente', descripcion: 'Adhesión al programa de reciclado y separación en origen.' },
-  { numero: '045/2025', titulo: 'Modificación del Código de Tránsito Municipal', fecha: '08/09/2025', categoria: 'Tránsito', descripcion: 'Actualización de normas de circulación y estacionamiento.' },
-  { numero: '044/2025', titulo: 'Creación del Consejo Local de Seguridad Vial', fecha: '15/08/2025', categoria: 'Seguridad', descripcion: 'Constitución del órgano consultivo en materia de seguridad vial.' },
-  { numero: '043/2025', titulo: 'Otorgamiento de personería jurídica a la Asociación Civil Vecinos de El Pingo', fecha: '02/07/2025', categoria: 'Asociaciones', descripcion: 'Reconocimiento oficial de la asociación vecinal.' },
-  { numero: '042/2025', titulo: 'Aprobación del Plan de Mantenimiento Vial 2025-2026', fecha: '20/06/2025', categoria: 'Obras Públicas', descripcion: 'Plan de intervención en calles y caminos del ejido municipal.' },
-  { numero: '041/2025', titulo: 'Normas para la habilitación y funcionamiento de comercios', fecha: '15/05/2025', categoria: 'Comercio', descripcion: 'Requisitos y procedimientos para habilitar comercios en el municipio.' },
-  { numero: '040/2025', titulo: 'Creación del Programa Municipal de Asistencia Social', fecha: '10/04/2025', categoria: 'Social', descripcion: 'Marco para la asistencia a familias en situación de vulnerabilidad.' },
-  { numero: '039/2025', titulo: 'Regulación de la publicidad en la vía pública', fecha: '05/03/2025', categoria: 'Espacio Público', descripcion: 'Normas para la colocación de carteles y publicidad exterior.' },
-  { numero: '038/2025', titulo: 'Presupuesto General de Gastos y Recursos del Municipio para el ejercicio 2025', fecha: '20/01/2025', categoria: 'Presupuesto', descripcion: 'Aprobación del presupuesto municipal para el período 2025.' },
+  { numero: '192/2026', titulo: 'IMPOSITIVA', fecha: '2026', categoria: 'Impuestos', descripcion: 'Ordenanza impositiva municipal para el ejercicio 2026.' },
+  { numero: '191/2025', titulo: 'PRESUPUESTO MUNICIPAL EJERCICIO FISCAL', fecha: '2025', categoria: 'Presupuesto', descripcion: 'Presupuesto General de Gastos y Recursos del Municipio para el ejercicio fiscal 2025.' },
+  { numero: '193/2025', titulo: 'TASA POR INSTALACIÓN DE ANTENAS', fecha: '2025', categoria: 'Tasas', descripcion: 'Regulación de tasas por instalación de antenas de telefonía en el ejido municipal.' },
+  { numero: '194/2025', titulo: 'NUEVOS VALORES DE ENTRADAS FIESTA DEL GUISO', fecha: '2025', categoria: 'Eventos', descripcion: 'Fijación de valores de entradas para la Fiesta Provincial del Guiso 2025.' },
+  { numero: '166/2024', titulo: 'IMPOSITIVA 2025', fecha: '2024', categoria: 'Impuestos', descripcion: 'Ordenanza impositiva municipal para el ejercicio 2025.' },
+  { numero: '167/2024', titulo: 'PRESUPUESTO 2025', fecha: '2024', categoria: 'Presupuesto', descripcion: 'Presupuesto General de Gastos y Recursos del Municipio para el ejercicio 2025.' },
 ];
 
-const categorias = ['Todas', 'Presupuesto', 'Ambiente', 'Comercio', 'Obras Públicas', 'Tránsito', 'Seguridad', 'Espacio Público', 'Social', 'Asociaciones'];
+const categorias = ['Todas', 'Presupuesto', 'Impuestos', 'Tasas', 'Eventos'];
 
 const categoriaColors: Record<string, string> = {
   'Presupuesto': 'bg-yellow-100 text-yellow-700',
-  'Ambiente': 'bg-green-100 text-green-700',
-  'Comercio': 'bg-blue-100 text-blue-700',
-  'Obras Públicas': 'bg-orange-100 text-orange-700',
-  'Tránsito': 'bg-red-100 text-red-700',
-  'Seguridad': 'bg-gray-100 text-gray-700',
-  'Espacio Público': 'bg-teal-100 text-teal-700',
-  'Social': 'bg-pink-100 text-pink-700',
-  'Asociaciones': 'bg-cyan-100 text-cyan-700',
+  'Impuestos': 'bg-orange-100 text-orange-700',
+  'Tasas': 'bg-blue-100 text-blue-700',
+  'Eventos': 'bg-pink-100 text-pink-700',
 };
 
 export default function Ordenanzas({ onNavigate }: OrdenanzasProps) {
@@ -95,6 +84,9 @@ export default function Ordenanzas({ onNavigate }: OrdenanzasProps) {
           <div className="mb-5 flex items-center justify-between">
             <p className="text-gray-500 text-sm">
               Mostrando <span className="font-semibold text-black">{filtered.length}</span> ordenanza{filtered.length !== 1 ? 's' : ''}
+            </p>
+            <p className="text-[#8FBF5A] text-xs font-semibold">
+              ¿No encontrás una ordenanza? <a href="mailto:hcdelpingo@gmail.com" className="underline hover:text-[#6FA040] transition-colors">Contactanos</a>
             </p>
           </div>
 

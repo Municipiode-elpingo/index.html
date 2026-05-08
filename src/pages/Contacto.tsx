@@ -24,25 +24,25 @@ export default function Contacto() {
     {
       icon: MapPin,
       titulo: 'Dirección',
-      lineas: ['Calle Principal s/n', 'El Pingo, Pueblo San Julián', 'Entre Ríos, Argentina'],
+      lineas: ['Presidente Perón 232', 'El Pingo, Pueblo San Julián', 'Entre Ríos, Argentina (CP 3132)'],
       color: '#E2B95B',
     },
     {
       icon: Phone,
       titulo: 'Teléfonos',
-      lineas: ['Municipio: +54 (343) 000-0000', 'HCD: +54 (343) 000-0002', 'Urgencias: +54 (343) 000-0001'],
+      lineas: ['Municipio: +54 343 6239365', 'HCD: +54 343 639265'],
       color: '#8FBF5A',
     },
     {
       icon: Mail,
       titulo: 'Correo Electrónico',
-      lineas: ['contacto@municipioelpingo.gob.ar', 'hcd@municipioelpingo.gob.ar', 'obras@municipioelpingo.gob.ar'],
+      lineas: ['secdegob.municipioelpingo@gmail.com', 'hcdelpingo@gmail.com'],
       color: '#E2B95B',
     },
     {
       icon: Clock,
       titulo: 'Horarios de Atención',
-      lineas: ['Lunes a Viernes: 7:00 – 14:00 hs', 'HCD: Lunes a Viernes: 8:00 – 13:00 hs', 'Urgencias: 24 hs'],
+      lineas: ['Lunes a Viernes: 7:00 – 14:00 hs', 'HCD: Lunes a Viernes: 8:00 – 13:00 hs'],
       color: '#8FBF5A',
     },
   ];
@@ -202,7 +202,7 @@ export default function Contacto() {
                     <MapPin size={16} className="text-[#E2B95B] mt-0.5 shrink-0" />
                     <div>
                       <p className="font-semibold text-black text-sm">Municipio de El Pingo</p>
-                      <p className="text-gray-500 text-xs mt-0.5">Calle Principal s/n, El Pingo, Pueblo San Julián, Entre Ríos, Argentina</p>
+                      <p className="text-gray-500 text-xs mt-0.5">Presidente Perón 232, El Pingo, Pueblo San Julián, Entre Ríos, Argentina (CP 3132)</p>
                     </div>
                   </div>
                 </div>
@@ -214,11 +214,14 @@ export default function Contacto() {
                   Seguinos en nuestras redes para estar al día con las novedades del municipio.
                 </p>
                 <div className="flex gap-3">
-                  <a href="#" className="flex-1 text-center bg-white/10 hover:bg-[#E2B95B] text-white text-sm font-semibold py-2.5 rounded-xl transition-colors duration-200">
+                  <a href="https://www.facebook.com/municipioelpingo/" target="_blank" rel="noopener noreferrer" className="flex-1 text-center bg-white/10 hover:bg-[#E2B95B] text-white text-sm font-semibold py-2.5 rounded-xl transition-colors duration-200">
                     Facebook
                   </a>
-                  <a href="#" className="flex-1 text-center bg-white/10 hover:bg-[#8FBF5A] text-white text-sm font-semibold py-2.5 rounded-xl transition-colors duration-200">
+                  <a href="https://www.instagram.com/municipioelpingo/" target="_blank" rel="noopener noreferrer" className="flex-1 text-center bg-white/10 hover:bg-[#8FBF5A] text-white text-sm font-semibold py-2.5 rounded-xl transition-colors duration-200">
                     Instagram
+                  </a>
+                  <a href="https://www.youtube.com/@fiestadelguiso9346" target="_blank" rel="noopener noreferrer" className="flex-1 text-center bg-white/10 hover:bg-red-500 text-white text-sm font-semibold py-2.5 rounded-xl transition-colors duration-200">
+                    YouTube
                   </a>
                 </div>
               </div>

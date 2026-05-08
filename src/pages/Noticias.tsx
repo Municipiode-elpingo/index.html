@@ -4,31 +4,31 @@ import { Calendar, Tag, ArrowRight } from 'lucide-react';
 const noticias = [
   {
     id: 1,
-    titulo: 'Mejoras en el alumbrado público del casco urbano',
-    fecha: '5 de abril, 2026',
-    categoria: 'Obras Públicas',
-    resumen: 'El municipio avanza con el recambio de luminarias convencionales por tecnología LED en las principales calles del casco urbano de El Pingo, mejorando la seguridad y reduciendo el consumo energético.',
-    contenido: 'La administración municipal anunció que la renovación de luminarias alcanzará más de 80 puntos de luz en las calles principales del ejido urbano. La inversión, financiada con fondos municipales y un aporte provincial, busca mejorar la seguridad nocturna de los vecinos y reducir el gasto energético del municipio en un 40%.',
-    img: 'https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=800',
+    titulo: 'Descubrí el Municipio y su Historia',
+    fecha: '9 de abril, 2026',
+    categoria: 'Historia',
+    resumen: 'Historia de El Pingo, sus orígenes como San Julián y la influencia del ferrocarril en las lomadas entrerrianas. Construyendo Futuro Juntos.',
+    contenido: 'El Pingo, conocido en sus orígenes como San Julián, se ubica en el corazón de las lomadas entrerrianas. Su historia está ligada inseparablemente al ferrocarril y al trabajo diario de su comunidad. La locomotora a vapor es el símbolo de su origen y desarrollo, representando el espíritu emprendedor que caracteriza a nuestro pueblo. Con el paso de los años, la comunidad fue creciendo alrededor de la estación, desarrollando una actividad agropecuaria próspera.',
+    img: 'https://images.pexels.com/photos/3573347/pexels-photo-3573347.jpeg?auto=compress&cs=tinysrgb&w=800',
     destacada: true,
   },
   {
     id: 2,
-    titulo: 'Nueva jornada de vacunación gratuita para mascotas',
-    fecha: '2 de abril, 2026',
-    categoria: 'Salud',
-    resumen: 'El área de Salud municipal organiza una nueva jornada de vacunación antirrábica y antipulgas para perros y gatos de El Pingo. El servicio es completamente gratuito para los vecinos.',
-    contenido: 'La jornada se realizará el próximo sábado 12 de abril en la Plaza Principal de 9:00 a 13:00 horas. Los vecinos deben concurrir con sus mascotas con correa o transportín. Se vacunarán hasta 300 animales en orden de llegada.',
-    img: 'https://images.pexels.com/photos/6235231/pexels-photo-6235231.jpeg?auto=compress&cs=tinysrgb&w=800',
+    titulo: 'Fiesta Provincial del Guiso: Tradiciones y Eventos',
+    fecha: '9 de abril, 2026',
+    categoria: 'Eventos',
+    resumen: 'Cada noviembre, El Pingo es anfitriona de la Fiesta Provincial del Guiso, el evento cultural y gastronómico más importante de la región.',
+    contenido: 'La Fiesta Provincial del Guiso es una celebración de la identidad entrerriana que reúne a vecinos y visitantes de toda la región. Gastronomía típica, música en vivo, tradiciones ancestrales y comunidad se conjugan en este encuentro único. El Pingo es la sede provincial de este festival, convirtiéndose en el corazón de la celebración cada mes de noviembre.',
+    img: 'https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=800',
     destacada: false,
   },
   {
     id: 3,
-    titulo: 'Apertura del registro de emprendedores locales 2026',
-    fecha: '28 de marzo, 2026',
-    categoria: 'Comercio',
-    resumen: 'La Secretaría de Gobierno abre la inscripción al Registro Municipal de Emprendedores para acceder a beneficios, capacitaciones y financiamiento a tasa cero para proyectos productivos locales.',
-    contenido: 'Los interesados pueden inscribirse hasta el 30 de abril presentando su proyecto y documentación en la Administración Municipal. Los emprendedores registrados tendrán acceso prioritario a ferias municipales, asesoramiento técnico y líneas de crédito del programa provincial Emprender Entre Ríos.',
+    titulo: 'Guía de Servicios en el Municipio de El Pingo',
+    fecha: '9 de abril, 2026',
+    categoria: 'Servicios',
+    resumen: 'Conocé los servicios institucionales disponibles para vecinos y visitantes: atención municipal, salud, educación y más.',
+    contenido: 'El Municipio de El Pingo ofrece una variedad de servicios para satisfacer las necesidades de la comunidad. Desde trámites municipales hasta servicios de salud, educación y apoyo social. Nuestro objetivo es brindar atención de calidad con transparencia y eficiencia. Contamos con personal capacitado y horarios de atención que facilitan el acceso de los vecinos a los servicios.',
     img: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
     destacada: false,
   },
@@ -64,14 +64,14 @@ const noticias = [
   },
 ];
 
-const categorias = ['Todas', 'Obras Públicas', 'Salud', 'Comercio', 'Cultura', 'Ambiente'];
+const categorias = ['Todas', 'Historia', 'Eventos', 'Servicios', 'Obras Públicas', 'Cultura'];
 
 const categoriaColors: Record<string, string> = {
+  'Historia': 'bg-purple-100 text-purple-700',
+  'Eventos': 'bg-pink-100 text-pink-700',
+  'Servicios': 'bg-blue-100 text-blue-700',
   'Obras Públicas': 'bg-orange-100 text-orange-700',
-  'Salud': 'bg-red-100 text-red-700',
-  'Comercio': 'bg-blue-100 text-blue-700',
   'Cultura': 'bg-yellow-100 text-yellow-700',
-  'Ambiente': 'bg-green-100 text-green-700',
 };
 
 export default function Noticias() {

@@ -37,13 +37,13 @@ export default function Municipio() {
               <h2 className="text-3xl md:text-4xl font-black text-black mt-2 mb-6">Nuestra Historia</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  El Pingo nació como una estación del ferrocarril a fines del siglo XIX, siendo la locomotora a vapor el símbolo de su origen y desarrollo. El nombre del pueblo está intrínsecamente ligado a la historia del transporte y la colonización de Entre Ríos.
+                  El Pingo, conocido en sus orígenes como San Julián, se ubica en el corazón de las lomadas entrerrianas. Su historia está ligada inseparablemente al ferrocarril y al trabajo diario de su comunidad. La locomotora a vapor es el símbolo de su origen y desarrollo, representando el espíritu emprendedor que caracteriza a nuestro pueblo.
                 </p>
                 <p>
-                  Con el paso de los años, la comunidad fue creciendo alrededor de la estación, desarrollando una actividad agropecuaria próspera basada en la ganadería, la agricultura y la producción avícola que caracterizan a la región entreriana.
+                  Con el paso de los años, la comunidad fue creciendo alrededor de la estación, desarrollando una actividad agropecuaria próspera basada en la ganadería, la agricultura y la producción avícola que caracterizan a la región entreriana. Nuestras raíces son profundas y nuestro compromiso con el trabajo es inquebrantable.
                 </p>
                 <p>
-                  Hoy, El Pingo es un municipio consolidado que conserva su identidad histórica y trabaja con visión de futuro para brindar a sus vecinos los servicios y la infraestructura que merecen.
+                  Hoy, El Pingo es un municipio consolidado que conserva su identidad histórica y trabaja con visión de futuro. Bajo el lema "Construyendo Futuro Juntos", trabajamos cada día para brindar a nuestros vecinos los servicios y la infraestructura que merecen.
                 </p>
               </div>
               <div className="flex items-center gap-3 mt-6 p-4 bg-white rounded-2xl border border-gray-100">

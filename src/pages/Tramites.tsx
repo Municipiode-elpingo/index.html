@@ -3,64 +3,84 @@ import { FileText, Home, Car, Trash2, Building, Users, Leaf, ChevronDown, Chevro
 
 const tramites = [
   {
-    icon: FileText,
-    titulo: 'Certificado de Libre Deuda Municipal',
-    descripcion: 'Obtené la certificación de que no tenés deudas pendientes con el municipio.',
-    tiempo: '48-72 horas',
-    requisitos: ['DNI del solicitante', 'CUIT/CUIL', 'Datos del inmueble o actividad comercial', 'Nota de solicitud'],
-    pasos: ['Presentar la documentación en la ventanilla de Rentas Municipales', 'Abonar la tasa correspondiente', 'Retirar el certificado en el plazo indicado'],
+    categoria: 'COMERCIO Y ACTIVIDADES ECONÓMICAS',
+    items: [
+      {
+        icon: Home,
+        titulo: 'Habilitación de Comercios y Actividades',
+        descripcion: 'Tramitá la habilitación municipal para iniciar o regularizar tu actividad comercial.',
+        tiempo: '5-10 días hábiles',
+        requisitos: ['DNI del titular', 'CUIT', 'Contrato de alquiler o escritura', 'Plano del local aprobado', 'Nota de solicitud', 'Aprobación de Bromatología (si aplica)'],
+        pasos: ['Completar el formulario de solicitud', 'Presentar documentación completa', 'Pago de aranceles', 'Inspección del local', 'Emisión del certificado de habilitación'],
+      },
+      {
+        icon: FileText,
+        titulo: 'Certificado de Libre Deuda Municipal',
+        descripcion: 'Obtené la certificación de que no tenés deudas pendientes con el municipio.',
+        tiempo: '48-72 horas',
+        requisitos: ['DNI del solicitante', 'CUIT/CUIL', 'Datos del inmueble o actividad comercial', 'Nota de solicitud'],
+        pasos: ['Presentar la documentación en la ventanilla de Rentas Municipales', 'Abonar la tasa correspondiente', 'Retirar el certificado en el plazo indicado'],
+      },
+    ],
   },
   {
-    icon: Home,
-    titulo: 'Habilitación de Comercios y Actividades',
-    descripcion: 'Tramitá la habilitación municipal para iniciar o regularizar tu actividad comercial.',
-    tiempo: '5-10 días hábiles',
-    requisitos: ['DNI del titular', 'CUIT', 'Contrato de alquiler o escritura', 'Plano del local aprobado', 'Nota de solicitud', 'Aprobación de Bromatología (si aplica)'],
-    pasos: ['Completar el formulario de solicitud', 'Presentar documentación completa', 'Pago de aranceles', 'Inspección del local', 'Emisión del certificado de habilitación'],
+    categoria: 'SERVICIOS Y ALQUILER DE MAQUINARIA',
+    items: [
+      {
+        icon: Trash2,
+        titulo: 'Solicitud de Servicio de Recolección de Residuos Voluminosos',
+        descripcion: 'Pedido especial para retiro de muebles, electrodomésticos y materiales de construcción.',
+        tiempo: 'Coordinación en 24-48 horas',
+        requisitos: ['Nombre completo', 'Domicilio', 'Teléfono de contacto', 'Descripción de los residuos'],
+        pasos: ['Llamar al número municipal o enviar solicitud escrita', 'Coordinación de fecha y hora con el área de Higiene Urbana', 'Colocar los residuos en la vereda el día indicado'],
+      },
+      {
+        icon: Users,
+        titulo: 'Solicitud de Turno para Asistencia Social',
+        descripcion: 'Atención y orientación para acceder a programas sociales municipales y provinciales.',
+        tiempo: 'Atención en el día',
+        requisitos: ['DNI del solicitante y grupo familiar', 'Documentación que respalde la situación', 'Domicilio actualizado'],
+        pasos: ['Concurrir a la Secretaría de Desarrollo Social', 'Entrevista inicial con trabajador/a social', 'Evaluación del caso', 'Derivación al programa correspondiente'],
+      },
+    ],
   },
   {
-    icon: Building,
-    titulo: 'Permiso de Construcción',
-    descripcion: 'Solicitar permiso para construcción, ampliación o refacción de inmuebles.',
-    tiempo: '15-30 días hábiles',
-    requisitos: ['DNI del propietario', 'Título de propiedad', 'Planos firmados por profesional matriculado', 'Pago de derechos de construcción', 'Declaración jurada de obra'],
-    pasos: ['Presentar planos y documentación en Obras Públicas', 'Revisión técnica por parte del área', 'Pago de derechos según superficie', 'Retiro del permiso aprobado'],
+    categoria: 'INMUEBLES Y VIVIENDA',
+    items: [
+      {
+        icon: Building,
+        titulo: 'Permiso de Construcción',
+        descripcion: 'Solicitar permiso para construcción, ampliación o refacción de inmuebles.',
+        tiempo: '15-30 días hábiles',
+        requisitos: ['DNI del propietario', 'Título de propiedad', 'Planos firmados por profesional matriculado', 'Pago de derechos de construcción', 'Declaración jurada de obra'],
+        pasos: ['Presentar planos y documentación en Obras Públicas', 'Revisión técnica por parte del área', 'Pago de derechos según superficie', 'Retiro del permiso aprobado'],
+      },
+      {
+        icon: Leaf,
+        titulo: 'Permiso de Poda y Extracción de Árboles',
+        descripcion: 'Solicitar autorización municipal para intervenir el arbolado público o privado.',
+        tiempo: '3-5 días hábiles',
+        requisitos: ['DNI del solicitante', 'Domicilio del árbol a intervenir', 'Justificación de la solicitud', 'Nota firmada'],
+        pasos: ['Presentar nota en la Mesa de Entradas', 'Inspección del árbol por técnico municipal', 'Resolución de aprobación o rechazo', 'Ejecución del trabajo con supervisión (si aplica)'],
+      },
+    ],
   },
   {
-    icon: Car,
-    titulo: 'Inscripción al Registro de Conductores',
-    descripcion: 'Alta o renovación en el registro municipal de conductores de vehículos.',
-    tiempo: '24-48 horas',
-    requisitos: ['DNI vigente', 'Licencia de conducir vigente', 'Apto médico', 'Fotos carnet (2)', 'Comprobante de pago'],
-    pasos: ['Solicitar turno en la oficina de Tránsito', 'Presentar documentación', 'Examen de conocimiento vial (para nuevos inscriptos)', 'Pago de tasa', 'Retiro de credencial'],
-  },
-  {
-    icon: Trash2,
-    titulo: 'Solicitud de Servicio de Recolección de Residuos Voluminosos',
-    descripcion: 'Pedido especial para retiro de muebles, electrodomésticos y materiales de construcción.',
-    tiempo: 'Coordinación en 24-48 horas',
-    requisitos: ['Nombre completo', 'Domicilio', 'Teléfono de contacto', 'Descripción de los residuos'],
-    pasos: ['Llamar al número municipal o enviar solicitud escrita', 'Coordinación de fecha y hora con el área de Higiene Urbana', 'Colocar los residuos en la vereda el día indicado'],
-  },
-  {
-    icon: Users,
-    titulo: 'Solicitud de Turno para Asistencia Social',
-    descripcion: 'Atención y orientación para acceder a programas sociales municipales y provinciales.',
-    tiempo: 'Atención en el día',
-    requisitos: ['DNI del solicitante y grupo familiar', 'Documentación que respalde la situación', 'Domicilio actualizado'],
-    pasos: ['Concurrir a la Secretaría de Desarrollo Social', 'Entrevista inicial con trabajador/a social', 'Evaluación del caso', 'Derivación al programa correspondiente'],
-  },
-  {
-    icon: Leaf,
-    titulo: 'Permiso de Poda y Extracción de Árboles',
-    descripcion: 'Solicitar autorización municipal para intervenir el arbolado público o privado.',
-    tiempo: '3-5 días hábiles',
-    requisitos: ['DNI del solicitante', 'Domicilio del árbol a intervenir', 'Justificación de la solicitud', 'Nota firmada'],
-    pasos: ['Presentar nota en la Mesa de Entradas', 'Inspección del árbol por técnico municipal', 'Resolución de aprobación o rechazo', 'Ejecución del trabajo con supervisión (si aplica)'],
+    categoria: 'VÍA PÚBLICA Y PUBLICIDAD',
+    items: [
+      {
+        icon: Car,
+        titulo: 'Inscripción al Registro de Conductores',
+        descripcion: 'Alta o renovación en el registro municipal de conductores de vehículos.',
+        tiempo: '24-48 horas',
+        requisitos: ['DNI vigente', 'Licencia de conducir vigente', 'Apto médico', 'Fotos carnet (2)', 'Comprobante de pago'],
+        pasos: ['Solicitar turno en la oficina de Tránsito', 'Presentar documentación', 'Examen de conocimiento vial (para nuevos inscriptos)', 'Pago de tasa', 'Retiro de credencial'],
+      },
+    ],
   },
 ];
 
-function TramiteCard({ tramite }: { tramite: typeof tramites[0] }) {
+function TramiteCard({ tramite }: { tramite: typeof tramites[0]['items'][0] }) {
   const [open, setOpen] = useState(false);
   const Icon = tramite.icon;
 
@@ -152,19 +172,28 @@ export default function Tramites() {
                 </p>
                 <div className="flex flex-wrap gap-4 mt-3">
                   <span className="flex items-center gap-1.5 text-sm text-gray-600">
-                    <Phone size={13} className="text-[#E2B95B]" /> +54 (343) 000-0000
+                    <Phone size={13} className="text-[#E2B95B]" /> +54 343 6239365
                   </span>
                   <span className="flex items-center gap-1.5 text-sm text-gray-600">
-                    <Mail size={13} className="text-[#E2B95B]" /> contacto@municipioelpingo.gob.ar
+                    <Mail size={13} className="text-[#E2B95B]" /> secdegob.municipioelpingo@gmail.com
                   </span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="space-y-4">
-            {tramites.map((t) => (
-              <TramiteCard key={t.titulo} tramite={t} />
+          <div className="space-y-12">
+            {tramites.map((seccion) => (
+              <div key={seccion.categoria}>
+                <h3 className="text-2xl font-black text-black mb-6 pb-3 border-b-2 border-[#E2B95B]">
+                  {seccion.categoria}
+                </h3>
+                <div className="space-y-4">
+                  {seccion.items.map((t) => (
+                    <TramiteCard key={t.titulo} tramite={t} />
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>

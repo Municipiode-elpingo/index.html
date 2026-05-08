@@ -21,21 +21,21 @@ const stats = [
 
 const newsPreview = [
   {
-    titulo: 'Mejoras en el alumbrado público del casco urbano',
-    fecha: '5 de abril, 2026',
-    categoria: 'Obras Públicas',
-    img: 'https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600',
+    titulo: 'Descubrí el Municipio y su Historia',
+    fecha: '9 de abril, 2026',
+    categoria: 'Historia',
+    img: 'https://images.pexels.com/photos/3573347/pexels-photo-3573347.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
-    titulo: 'Nueva jornada de vacunación gratuita para mascotas',
-    fecha: '2 de abril, 2026',
-    categoria: 'Salud',
-    img: 'https://images.pexels.com/photos/6235231/pexels-photo-6235231.jpeg?auto=compress&cs=tinysrgb&w=600',
+    titulo: 'Fiesta Provincial del Guiso: Tradiciones y Eventos',
+    fecha: '9 de abril, 2026',
+    categoria: 'Eventos',
+    img: 'https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
-    titulo: 'Apertura del registro de emprendedores locales 2026',
-    fecha: '28 de marzo, 2026',
-    categoria: 'Comercio',
+    titulo: 'Guía de Servicios en el Municipio de El Pingo',
+    fecha: '9 de abril, 2026',
+    categoria: 'Servicios',
     img: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
 ];
@@ -191,6 +191,45 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </section>
 
+      <section className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="aspect-video rounded-3xl overflow-hidden shadow-lg border border-gray-100">
+              <img
+                src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Fiesta Provincial del Guiso"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <span className="text-[#8FBF5A] text-sm font-semibold uppercase tracking-widest">Evento destacado</span>
+              <h2 className="text-3xl md:text-4xl font-black text-black mt-2 mb-4">Fiesta Provincial del Guiso</h2>
+              <p className="text-gray-600 text-lg leading-relaxed mb-4">
+                El evento cultural y gastronómico más importante de la región. Cada noviembre, El Pingo es anfitriona de la Fiesta Provincial del Guiso, una celebración de la identidad entrerriana.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Gastronomía típica, música en vivo, tradiciones ancestrales y comunidad. Un encuentro que reúne a vecinos y visitantes para compartir la riqueza cultural de Entre Ríos.
+              </p>
+              <div className="flex items-center gap-3 p-5 rounded-2xl bg-[#8FBF5A]/10 border border-[#8FBF5A]/20 mb-6">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#8FBF5A] text-white font-bold text-lg">
+                  Nov
+                </div>
+                <div>
+                  <p className="font-bold text-black">Noviembre de cada año</p>
+                  <p className="text-gray-500 text-sm">Celebración provincial anual</p>
+                </div>
+              </div>
+              <button
+                onClick={() => handleNav('noticias')}
+                className="flex items-center gap-2 bg-[#8FBF5A] text-white px-7 py-3.5 rounded-full font-semibold hover:bg-[#6FA040] transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+              >
+                Ver más sobre el evento <ArrowRight size={16} />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20" style={{ background: 'linear-gradient(180deg, #E2B95B 0%, #8FBF5A 100%)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <Users size={48} className="text-black/40 mx-auto mb-6" />
@@ -198,7 +237,7 @@ export default function Home({ onNavigate }: HomeProps) {
             Tu municipio al servicio de la comunidad
           </h2>
           <p className="text-black/70 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            En El Pingo trabajamos con transparencia y compromiso para brindar los mejores servicios a cada vecino. Tu participación hace más fuerte a nuestra comunidad.
+            En El Pingo trabajamos con transparencia y compromiso para brindar los mejores servicios a cada vecino. Tu participación hace más fuerte a nuestra comunidad. Construyendo Futuro Juntos.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <button
